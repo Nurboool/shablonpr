@@ -1,4 +1,4 @@
-package modul_6_DZ;
+package Strategy_61_DZ;
 
 public class PaymentContext {
 
@@ -9,10 +9,6 @@ public class PaymentContext {
     }
 
     public void executePayment(double amount) {
-        if (strategy == null) {
-            System.out.println("Стратегия оплаты не выбрана!");
-            return;
-        }
         strategy.pay(amount);
     }
 }
