@@ -8,7 +8,7 @@ public class HotelFacade {
     private CleaningService cleaning = new CleaningService();
     private TaxiService taxi = new TaxiService();
 
-    // 🏨 Бронирование с услугами
+    //  Бронирование с услугами
     public void bookFullService(String name) {
 
         room.bookRoom(name);
@@ -16,7 +16,7 @@ public class HotelFacade {
         cleaning.scheduleCleaning("Room for " + name);
     }
 
-    // 🎉 Мероприятие
+    //  Мероприятие
     public void organizeEvent(String eventName, String guest) {
 
         event.bookHall(eventName);
@@ -24,19 +24,19 @@ public class HotelFacade {
         room.bookRoom(guest);
     }
 
-    // 🍽 Ресторан + такси
+    //  Ресторан + такси
     public void bookRestaurantWithTaxi(String name) {
 
         restaurant.bookTable(name);
         taxi.callTaxi(name);
     }
 
-    // ❌ Отмена
+    //  Отмена
     public void cancelBooking(String name) {
         room.cancelBooking(name);
     }
 
-    // 🧹 Уборка
+    //  Уборка
     public void requestCleaning(String roomNumber) {
         cleaning.scheduleCleaning(roomNumber);
     }

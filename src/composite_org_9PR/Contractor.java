@@ -14,7 +14,7 @@ public class Contractor extends OrganizationComponent {
     }
 
     public double getBudget() {
-        return 0; // бюджетке кірмейді
+        return 0;
     }
 
     public int getEmployeeCount() {

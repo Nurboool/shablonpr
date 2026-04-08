@@ -59,7 +59,7 @@ public class Department extends OrganizationComponent {
         return total;
     }
 
-    // 🔍 поиск
+    //  поиск
     public void findEmployee(String name) {
 
         for (OrganizationComponent c : children) {
